@@ -26,9 +26,11 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="{{ route('tag.delete', ['id' => $tag->id]) }}" class="btn btn-xs btn-danger">
-                                        Delete
-                                    </a>
+                                    @if ($tag->posts()->count() < 1)
+                                        <a href="{{ route('tag.delete', ['id' => $tag->id]) }}" class="btn btn-xs btn-danger">
+                                            Delete
+                                        </a>
+                                    @endif
                                 </td>
                             </tr>
                         @endforeach

@@ -48,163 +48,171 @@
     <div class="header-spacer"></div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <article class="hentry post post-standard has-post-thumbnail sticky">
+        @if ($posts->count() > 0)
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <article class="hentry post post-standard has-post-thumbnail sticky">
 
-                        <div class="post-thumb">
-                            <img src="{{ $posts[0]->featured }}" alt="{{ $posts[0]->title }}">
-                            <div class="overlay"></div>
-                            <a href="{{ $posts[0]->featured }}" class="link-image js-zoom-image">
-                                <i class="seoicon-zoom"></i>
-                            </a>
-                            <a href="#" class="link-post">
-                                <i class="seoicon-link-bold"></i>
-                            </a>
-                        </div>
-
-                        <div class="post__content">
-
-                            <div class="post__content-info">
-
-                                    <h2 class="post__title entry-title  text-center">
-                                        <a href="{{ route('post.single', ['slug' => $posts[0]->slug ]) }}">{{ $posts[0]->title }}</a>
-                                    </h2>
-
-                                    <div class="post-additional-info">
-
-                                        <span class="post__date">
-
-                                            <i class="seoicon-clock"></i>
-
-                                            <time class="published" datetime="2016-04-17 12:00:00">
-                                                {{ $posts[0]->created_at->toFormattedDateString() }}
-                                            </time>
-
-                                        </span>
-
-                                        <span class="category">
-                                            <i class="seoicon-tags"></i>
-                                            <a href="{{ route('category.single', ['slug' => $posts[0]->category->slug]) }}">{{ $posts[0]->category->name }}</a>
-                                        </span>
-
-                                        <span class="post__comments">
-                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                            6
-                                        </span>
-
-                                    </div>
+                            <div class="post-thumb">
+                                <img src="{{ $posts[0]->featured }}" alt="{{ $posts[0]->title }}">
+                                <div class="overlay"></div>
+                                <a href="{{ $posts[0]->featured }}" class="link-image js-zoom-image">
+                                    <i class="seoicon-zoom"></i>
+                                </a>
+                                <a href="#" class="link-post">
+                                    <i class="seoicon-link-bold"></i>
+                                </a>
                             </div>
-                        </div>
 
-                </article>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
+                            <div class="post__content">
 
-        <div class="row">
-            <div class="col-lg-6">
-                <article class="hentry post post-standard has-post-thumbnail sticky">
+                                <div class="post__content-info">
 
-                        <div class="post-thumb">
-                            <img src="{{ $posts[1]->featured }}" alt="{{ $posts[1]->title }}">
-                            <div class="overlay"></div>
-                            <a href="{{ $posts[1]->featured }}" class="link-image js-zoom-image">
-                                <i class="seoicon-zoom"></i>
-                            </a>
-                            <a href="#" class="link-post">
-                                <i class="seoicon-link-bold"></i>
-                            </a>
-                        </div>
+                                        <h2 class="post__title entry-title  text-center">
+                                            <a href="{{ route('post.single', ['slug' => $posts[0]->slug ]) }}">{{ $posts[0]->title }}</a>
+                                        </h2>
 
-                        <div class="post__content">
+                                        <div class="post-additional-info">
 
-                            <div class="post__content-info">
+                                            <span class="post__date">
 
-                                    <h2 class="post__title entry-title ">
-                                        <a href="{{ route('post.single', ['slug' => $posts[1]->slug ]) }}">{{ $posts[1]->title }}</a>
-                                    </h2>
+                                                <i class="seoicon-clock"></i>
 
-                                    <div class="post-additional-info">
+                                                <time class="published" datetime="2016-04-17 12:00:00">
+                                                    {{ $posts[0]->created_at->toFormattedDateString() }}
+                                                </time>
 
-                                        <span class="post__date">
+                                            </span>
 
-                                            <i class="seoicon-clock"></i>
+                                            <span class="category">
+                                                <i class="seoicon-tags"></i>
+                                                <a href="{{ route('category.single', ['slug' => $posts[0]->category->slug]) }}">{{ $posts[0]->category->name }}</a>
+                                            </span>
 
-                                            <time class="published" datetime="2016-04-17 12:00:00">
-                                                {{ $posts[1]->created_at->toFormattedDateString() }}
-                                            </time>
+                                            <span class="post__comments">
+                                                <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+                                                6
+                                            </span>
 
-                                        </span>
-
-                                        <span class="category">
-                                            <i class="seoicon-tags"></i>
-                                            <a href="{{ route('category.single', ['slug' => $posts[0]->category->slug]) }}">{{ $posts[1]->category->name }}</a>
-                                        </span>
-
-                                        <span class="post__comments">
-                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                            6
-                                        </span>
-
-                                    </div>
+                                        </div>
+                                </div>
                             </div>
-                        </div>
 
-                </article>
+                    </article>
+                </div>
+                <div class="col-lg-2"></div>
             </div>
-            <div class="col-lg-6">
-                <article class="hentry post post-standard has-post-thumbnail sticky">
 
-                        <div class="post-thumb">
-                            <img src="{{ $posts[2]->featured }}" alt="{{ $posts[2]->title }}">
-                            <div class="overlay"></div>
-                            <a href="{{ $posts[2]->featured }}" class="link-image js-zoom-image">
-                                <i class="seoicon-zoom"></i>
-                            </a>
-                            <a href="#" class="link-post">
-                                <i class="seoicon-link-bold"></i>
-                            </a>
-                        </div>
+            <div class="row">
+                @if ($posts->count() > 1)
+                <div class="col-lg-6">
+                    <article class="hentry post post-standard has-post-thumbnail sticky">
 
-                        <div class="post__content">
-
-                            <div class="post__content-info">
-
-                                    <h2 class="post__title entry-title ">
-                                        <a href="{{ route('post.single', ['slug' => $posts[2]->slug ]) }}">{{ $posts[2]->title }}</a>
-                                    </h2>
-
-                                    <div class="post-additional-info">
-
-                                        <span class="post__date">
-
-                                            <i class="seoicon-clock"></i>
-
-                                            <time class="published" datetime="2016-04-17 12:00:00">
-                                                {{ $posts[2]->created_at->toFormattedDateString() }}
-                                            </time>
-
-                                        </span>
-
-                                        <span class="category">
-                                            <i class="seoicon-tags"></i>
-                                            <a href="#">{{ $posts[2]->category->name }}</a>
-                                        </span>
-
-                                        <span class="post__comments">
-                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                            6
-                                        </span>
-
-                                    </div>
+                            <div class="post-thumb">
+                                <img src="{{ $posts[1]->featured }}" alt="{{ $posts[1]->title }}">
+                                <div class="overlay"></div>
+                                <a href="{{ $posts[1]->featured }}" class="link-image js-zoom-image">
+                                    <i class="seoicon-zoom"></i>
+                                </a>
+                                <a href="#" class="link-post">
+                                    <i class="seoicon-link-bold"></i>
+                                </a>
                             </div>
-                        </div>
 
-                </article>
+                            <div class="post__content">
+
+                                <div class="post__content-info">
+
+                                        <h2 class="post__title entry-title ">
+                                            <a href="{{ route('post.single', ['slug' => $posts[1]->slug ]) }}">{{ $posts[1]->title }}</a>
+                                        </h2>
+
+                                        <div class="post-additional-info">
+
+                                            <span class="post__date">
+
+                                                <i class="seoicon-clock"></i>
+
+                                                <time class="published" datetime="2016-04-17 12:00:00">
+                                                    {{ $posts[1]->created_at->toFormattedDateString() }}
+                                                </time>
+
+                                            </span>
+
+                                            <span class="category">
+                                                <i class="seoicon-tags"></i>
+                                                <a href="{{ route('category.single', ['slug' => $posts[0]->category->slug]) }}">{{ $posts[1]->category->name }}</a>
+                                            </span>
+
+                                            <span class="post__comments">
+                                                <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+                                                6
+                                            </span>
+
+                                        </div>
+                                </div>
+                            </div>
+
+                    </article>
+                </div>
+                @endif
+                @if ($posts->count() > 2)
+                <div class="col-lg-6">
+                    <article class="hentry post post-standard has-post-thumbnail sticky">
+
+                            <div class="post-thumb">
+                                <img src="{{ $posts[2]->featured }}" alt="{{ $posts[2]->title }}">
+                                <div class="overlay"></div>
+                                <a href="{{ $posts[2]->featured }}" class="link-image js-zoom-image">
+                                    <i class="seoicon-zoom"></i>
+                                </a>
+                                <a href="#" class="link-post">
+                                    <i class="seoicon-link-bold"></i>
+                                </a>
+                            </div>
+
+                            <div class="post__content">
+
+                                <div class="post__content-info">
+
+                                        <h2 class="post__title entry-title ">
+                                            <a href="{{ route('post.single', ['slug' => $posts[2]->slug ]) }}">{{ $posts[2]->title }}</a>
+                                        </h2>
+
+                                        <div class="post-additional-info">
+
+                                            <span class="post__date">
+
+                                                <i class="seoicon-clock"></i>
+
+                                                <time class="published" datetime="2016-04-17 12:00:00">
+                                                    {{ $posts[2]->created_at->toFormattedDateString() }}
+                                                </time>
+
+                                            </span>
+
+                                            <span class="category">
+                                                <i class="seoicon-tags"></i>
+                                                <a href="#">{{ $posts[2]->category->name }}</a>
+                                            </span>
+
+                                            <span class="post__comments">
+                                                <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+                                                6
+                                            </span>
+
+                                        </div>
+                                </div>
+                            </div>
+
+                    </article>
+                </div>
+                @endif
             </div>
-        </div>
+        @else
+            <h3 class="text-center">No content available...</h3>
+        @endif
     </div>
 
 
@@ -226,16 +234,18 @@
                     </div>
                     <div class="row">
                         <div class="case-item-wrap">
-                            @foreach ($categories[1]->posts()->orderBy('created_at', 'desc')->take(3)->get() as $post)
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                    <div class="case-item">
-                                        <div class="case-item__thumb">
-                                            <{{('img')}} src="{{ $post->featured }}" alt="our case">
+                            @if ($categories[1]->posts()->count() > 0)
+                                @foreach ($categories[1]->posts()->orderBy('created_at', 'desc')->take(3)->get() as $post)
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="case-item">
+                                            <div class="case-item__thumb">
+                                                <{{('img')}} src="{{ $post->featured }}" alt="our case">
+                                            </div>
+                                            <h6 class="case-item__title text-center"><a href="{{ route('post.single', ['slug' => $post->slug ]) }}">{{ $post->title }}</a></h6>
                                         </div>
-                                        <h6 class="case-item__title text-center"><a href="{{ route('post.single', ['slug' => $post->slug ]) }}">{{ $post->title }}</a></h6>
                                     </div>
-                                </div>
-                            @endforeach
+                                @endforeach
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -254,16 +264,18 @@
                     </div>
                     <div class="row">
                         <div class="case-item-wrap">
-                            @foreach ($categories[2]->posts()->orderBy('created_at', 'desc')->take(3)->get() as $post)
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                    <div class="case-item">
-                                        <div class="case-item__thumb">
-                                            <{{('img')}} src="{{ $post->featured }}" alt="our case">
+                            @if ($categories[2]->posts()->count() > 0)
+                                @foreach ($categories[2]->posts()->orderBy('created_at', 'desc')->take(3)->get() as $post)
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="case-item">
+                                            <div class="case-item__thumb">
+                                                <{{('img')}} src="{{ $post->featured }}" alt="our case">
+                                            </div>
+                                            <h6 class="case-item__title text-center"><a href="{{ route('post.single', ['slug' => $post->slug ]) }}">{{ $post->title }}</a></h6>
                                         </div>
-                                        <h6 class="case-item__title text-center"><a href="{{ route('post.single', ['slug' => $post->slug ]) }}">{{ $post->title }}</a></h6>
                                     </div>
-                                </div>
-                            @endforeach
+                                @endforeach
+                            @endif
                         </div>
                     </div>
                 </div>

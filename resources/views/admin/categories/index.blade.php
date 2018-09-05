@@ -26,9 +26,11 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="{{ route('category.delete', ['id' => $category->id]) }}" class="btn btn-xs btn-danger">
-                                        Delete
-                                    </a>
+                                    @if ($category->posts()->count() < 1)
+                                        <a href="{{ route('category.delete', ['id' => $category->id]) }}" class="btn btn-xs btn-danger">
+                                            Delete
+                                        </a>
+                                    @endif
                                 </td>
                             </tr>
                         @endforeach
