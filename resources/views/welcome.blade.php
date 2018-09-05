@@ -55,9 +55,9 @@
                     <article class="hentry post post-standard has-post-thumbnail sticky">
 
                             <div class="post-thumb">
-                                <img src="{{ $posts[0]->featured }}" alt="{{ $posts[0]->title }}">
+                                <img src="{{ $posts[0]->getAttributes()['featured'] }}" alt="{{ $posts[0]->title }}">
                                 <div class="overlay"></div>
-                                <a href="{{ $posts[0]->featured }}" class="link-image js-zoom-image">
+                                <a href="{{ $posts[0]->getAttributes()['featured'] }}" class="link-image js-zoom-image">
                                     <i class="seoicon-zoom"></i>
                                 </a>
                                 <a href="#" class="link-post">
@@ -105,9 +105,9 @@
                     <article class="hentry post post-standard has-post-thumbnail sticky">
 
                             <div class="post-thumb">
-                                <img src="{{ $posts[1]->featured }}" alt="{{ $posts[1]->title }}">
+                                <img src="{{ $posts[1]->getAttributes()['featured'] }}" alt="{{ $posts[1]->title }}">
                                 <div class="overlay"></div>
-                                <a href="{{ $posts[1]->featured }}" class="link-image js-zoom-image">
+                                <a href="{{ $posts[1]->getAttributes()['featured'] }}" class="link-image js-zoom-image">
                                     <i class="seoicon-zoom"></i>
                                 </a>
                                 <a href="#" class="link-post">
@@ -157,9 +157,9 @@
                     <article class="hentry post post-standard has-post-thumbnail sticky">
 
                             <div class="post-thumb">
-                                <img src="{{ $posts[2]->featured }}" alt="{{ $posts[2]->title }}">
+                                <img src="{{ $posts[2]->getAttributes()['featured'] }}" alt="{{ $posts[2]->title }}">
                                 <div class="overlay"></div>
-                                <a href="{{ $posts[2]->featured }}" class="link-image js-zoom-image">
+                                <a href="{{ $posts[2]->getAttributes()['featured'] }}" class="link-image js-zoom-image">
                                     <i class="seoicon-zoom"></i>
                                 </a>
                                 <a href="#" class="link-post">
@@ -234,7 +234,7 @@
                                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                         <div class="case-item">
                                             <div class="case-item__thumb">
-                                                <{{('img')}} src="{{ $post->featured }}" alt="our case">
+                                                <{{('img')}} src="{{ $post->getAttributes()['featured'] }}" alt="{{ $post->title }}">
                                             </div>
                                             <h6 class="case-item__title text-center"><a href="{{ route('post.single', ['slug' => $post->slug ]) }}">{{ $post->title }}</a></h6>
                                         </div>
@@ -264,7 +264,7 @@
                                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                         <div class="case-item">
                                             <div class="case-item__thumb">
-                                                <{{('img')}} src="{{ $post->featured }}" alt="our case">
+                                                <{{('img')}} src="{{ $post->getAttributes()['featured'] }}" alt="{{ $post->title }}">
                                             </div>
                                             <h6 class="case-item__title text-center"><a href="{{ route('post.single', ['slug' => $post->slug ]) }}">{{ $post->title }}</a></h6>
                                         </div>

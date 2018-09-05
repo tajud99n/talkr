@@ -15,7 +15,7 @@
 
 Route::get('/', [
     'uses'  => 'FrontEndController@index',
-    'as'    => 'home'
+    'as'    => 'welcome'
 ]);
 
 Route::get('/results', function() {
