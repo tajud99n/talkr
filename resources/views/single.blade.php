@@ -15,7 +15,7 @@
                     <article class="hentry post post-standard-details">
 
                         <div class="post-thumb">
-                            <img src="{{ $post->getAttributes()['featured'] }}" alt="seo">
+                            <img src="{{ $post->featured }}" alt="{{ $post->title }}">
                         </div>
 
                         <div class="post__content">
