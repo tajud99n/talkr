@@ -25,7 +25,7 @@ class PostsTableSeeder extends Seeder
 
         $p1 = [
             'title'     => $t1,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . '15354696766.jpg',
             'category_id' => 1,
             'slug' => str_slug($t1),
@@ -33,7 +33,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p2 = [
             'title'     => $t2,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . '1535470315pv3.jpg',
             'category_id' => 3,
             'slug' => str_slug($t2),
@@ -41,7 +41,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p3 = [
             'title'     => $t3,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . 'myAvatar.png',
             'category_id' => 1,
             'slug' => str_slug($t3),
@@ -49,7 +49,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p4 = [
             'title'     => $t4,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . 'foodie.png',
             'category_id' => 1,
             'slug' => str_slug($t4),
@@ -57,7 +57,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p5 = [
             'title'     => $t5,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . 'footd.png',
             'category_id' => 2,
             'slug' => str_slug($t5),
@@ -65,7 +65,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p6 = [
             'title'     => $t6,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . 'versus.jpg',
             'category_id' => 1,
             'slug' => str_slug($t6),
@@ -73,7 +73,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p7 = [
             'title'     => $t7,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . '15356328404.jpg',
             'category_id' => 2,
             'slug' => str_slug($t7),
@@ -81,7 +81,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p8 = [
             'title'     => $t8,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . '15356323249.jpg',
             'category_id' => 4,
             'slug' => str_slug($t8),
@@ -89,7 +89,7 @@ class PostsTableSeeder extends Seeder
         ];
         $p9 = [
             'title'     => $t1,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . 'bugs.jpg',
             'category_id' => 2,
             'slug' => str_slug($t1),
@@ -98,7 +98,7 @@ class PostsTableSeeder extends Seeder
 
         $p10 = [
             'title'     => $t10,
-            'content'   => $request->content,
+            'content'   => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi. Purus gravida quis blandit turpis cursus in hac habitasse platea. Convallis convallis tellus id interdum velit. Faucibus a pellentesque sit amet porttitor eget.',
             'featured'  => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . 'gossip.jpg',
             'category_id' => 3,
             'slug' => str_slug($t10),
