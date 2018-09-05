@@ -67,7 +67,7 @@ class PostsController extends Controller
         $post = Post::create([
             'title'         => $request->title,
             'content'       => $request->content,
-            'featured'      => 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . $featured_new_name,
+            'featured'      => DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . $featured_new_name,
             'category_id'   => $request->category_id,
             'slug'          => str_slug($request->title),
             'user_id'       => Auth::id()
@@ -137,7 +137,7 @@ class PostsController extends Controller
 
             $featured->move('uploads/posts', $featured_new_name);
 
-            $post->featured = 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . $featured_new_name;
+            $post->featured = DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'posts' . DIRECTORY_SEPARATOR . $featured_new_name;
         }
 
         $post->title        = $request->title;
