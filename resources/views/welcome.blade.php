@@ -90,11 +90,6 @@
                                                 <a href="{{ route('category.single', ['slug' => $posts[0]->category->slug]) }}">{{ $posts[0]->category->name }}</a>
                                             </span>
 
-                                            <span class="post__comments">
-                                                <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
-                                                6
-                                            </span>
-
                                         </div>
                                 </div>
                             </div>

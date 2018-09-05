@@ -39,7 +39,7 @@ Route::get('/category/{slug}', [
 ]);
 
 Route::get('/tag/{slug}', [
-    'uses'  => 'frontEndController@tag',
+    'uses'  => 'FrontEndController@tag',
     'as'    => 'tag.single'
 ]);
 
